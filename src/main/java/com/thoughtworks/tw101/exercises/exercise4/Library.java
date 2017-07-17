@@ -12,5 +12,12 @@ public class Library {
     }
 
     public void printBooksContaining(String partialBookTitle) {
+        printStream.printf("Looking for book titles containing substring \"%s\":\n", partialBookTitle);
+        for (String book : books) {
+            if (book.toLowerCase().contains(partialBookTitle.toLowerCase())) {
+                printStream.println(book);
+            }
+        }
+        printStream.print("\n");
     }
 }
