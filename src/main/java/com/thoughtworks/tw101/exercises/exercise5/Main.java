@@ -4,6 +4,7 @@ package com.thoughtworks.tw101.exercises.exercise5;
 // Find the average area of the rectangles.
 
 public class Main {
+
     public static void main(String[] args) {
 
         Rectangle[] rectangles = {

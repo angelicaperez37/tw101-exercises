@@ -3,6 +3,10 @@ package com.thoughtworks.tw101.exercises.exercise5;
 public class RectangleAverager {
 
     public float averageArea(Rectangle[] rectangles) {
-        return 0;
+        float sum = 0.0f;
+        for (Rectangle rect: rectangles) {
+            sum += (float) rect.area();
+        }
+        return sum/(float)rectangles.length;
     }
 }
